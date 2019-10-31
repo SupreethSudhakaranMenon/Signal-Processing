@@ -1,0 +1,11 @@
+1.d] By varying the values of n, we increase the order of the filter, i.e. we basically change the length of the filter's impulse response. This increases the efficiency of the filter and hence we get a much more filtered output.
+
+2.a] Yes the filter is required to be odd length because the impulse response should be symmetric. This is because our sinc function is symmetric across zero and if we have to consider a symmetric response which is a segment of the sinc function, we have to take same length of signal on both sodes of zero and also including zero. So we always have an odd length mpulse response (or) odd order frequency response  
+
+2.b] Yes the windows need to be symmetric because all the input signal frequencies must be linearly delayed by the same amount (as all the sine terms or all the cosine terms must become zeros - for uniform & linearly varying delay) .Hence, by doing this, the filter does not introduce phase distortion.
+
+2.c] Yes the filter has a linear phase response
+
+2.d] Trade offs are basically based on the Main lobe width and the amplitude of the side lobe. More the width of the main lobe and the lesser the amplitude of the side lobe better the filter.
+
+2.e] While trying to separate/identify two signals that are fairly close in frequency, but similar in strength, then we should choose the rectangular, because it will give you the best resolution, while if they are of different frequencies we can pick the other windows.
